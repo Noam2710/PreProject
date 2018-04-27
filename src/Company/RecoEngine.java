@@ -9,20 +9,26 @@ import java.util.*;
 public class RecoEngine {
     public static final String ANSI_RED = "\033[1;31m";;
     public static final String ANSI_RESET = "\u001B[0m";
-    public static final String MOVIES_PATH = "C:\\Users\\noammo\\OneDrive - Mellanox\\Desktop\\PreProject\\Help\\ml-latest-small\\movies.csv";
-    public static final String RATING_PATH = "C:\\Users\\noammo\\OneDrive - Mellanox\\Desktop\\PreProject\\Help\\ml-latest-small\\ratings.csv";
+    public static String MOVIES_PATH;
+    public static String RATING_PATH;
     public static Scanner s = new Scanner(System.in);
     List<List<String>> MoviesPool,UserMovies,RecommendMovies,Ratings,TempForLaterCheck;
     Set<String> genres;
 
 
     public RecoEngine() throws Exception {
+        InitPaths();
         MoviesPool = readCSVFile(MOVIES_PATH);
         Ratings = readCSVFile(RATING_PATH);
         UserMovies = new ArrayList<List<String>>();
         RecommendMovies = new ArrayList<List<String>>();
         TempForLaterCheck = new ArrayList<List<String>>();
         genres = GetAllGenres();
+    }
+
+    private void InitPaths() {
+        MOVIES_PATH = System.getProperty("user.dir") + "\\Help\\ml-latest-small\\movies.csv";
+        RATING_PATH = System.getProperty("user.dir") + "\\Help\\ml-latest-small\\ratings.csv";
     }
 
     public static void main(String[] args) throws Exception {
