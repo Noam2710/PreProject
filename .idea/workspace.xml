@@ -20,27 +20,16 @@
       <file leaf-file-name="RecoEngine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="334" column="38" lean-forward="true" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
               <folding>
-                <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
-                <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-                <element signature="class#9673:9916" expanded="false" />
-                <element signature="method#compare#0;class#9673:9916" expanded="false" />
+                <element signature="e#9940#9948#0" expanded="true" />
+                <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
+                <element signature="class#11377:11620" expanded="false" />
+                <element signature="method#compare#0;class#11377:11620" expanded="false" />
                 <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-                <element signature="class#10403:10644" expanded="false" />
-                <element signature="method#compare#0;class#10403:10644" expanded="false" />
-                <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
+                <element signature="class#12107:12348" expanded="false" />
+                <element signature="method#compare#0;class#12107:12348" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,6 +40,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>split</find>
+      <find>catch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,13 +183,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53700787" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47244096" sideWeight="0.50390625" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40472442" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5023622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -211,7 +201,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47874016" sideWeight="0.49609375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53700787" sideWeight="0.49609375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -225,15 +215,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Company/RecoEngine.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -264,29 +246,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="166">
+          <caret line="334" column="38" lean-forward="true" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
           <folding>
-            <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#9673:9916" expanded="false" />
-            <element signature="method#compare#0;class#9673:9916" expanded="false" />
+            <element signature="e#9940#9948#0" expanded="true" />
+            <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#11377:11620" expanded="false" />
+            <element signature="method#compare#0;class#11377:11620" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#10403:10644" expanded="false" />
-            <element signature="method#compare#0;class#10403:10644" expanded="false" />
-            <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#12107:12348" expanded="false" />
+            <element signature="method#compare#0;class#12107:12348" expanded="false" />
           </folding>
         </state>
       </provider>
