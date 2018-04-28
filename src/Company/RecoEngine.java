@@ -14,6 +14,7 @@ public class RecoEngine {
     public static Scanner s = new Scanner(System.in);
     List<List<String>> MoviesPool,UserMovies,RecommendMovies,Ratings,TempForLaterCheck;
     Set<String> genres;
+    HashMap<Object, Object> TopGenres;
 
 
     public RecoEngine() throws Exception {
@@ -24,6 +25,7 @@ public class RecoEngine {
         RecommendMovies = new ArrayList<List<String>>();
         TempForLaterCheck = new ArrayList<List<String>>();
         genres = GetAllGenres();
+
     }
 
     private void InitPaths() {
@@ -33,15 +35,25 @@ public class RecoEngine {
 
     public static void main(String[] args) throws Exception {
         PrintInfo("Welcome to our Movie's Recommendation engine, HAVE FUN");
+        PrintInfo("Please press the option you want - ");
+        PrintInfo("1. Enter Movies");
+        PrintInfo("2. Enter Genre");
+        int chose = s.nextInt();
         RecoEngine re = new RecoEngine();
-        re.InitUserMovies();
-        re.RecommendMoviesForUser();
+        re.InitUserMovies(chose);
+        re.RecommendMoviesForUser(chose);
     }
 
-    private void RecommendMoviesForUser() {
+    private void RecommendMoviesForUser(int chose) {
         PrintInfo("Searching for Similar movies for the user...");
-        HashMap<String, Integer> CountGenresDic = CountGenres(UserMovies);
-        HashMap<Object, Object> TopGenres = MapsortByValuesInteger(CountGenresDic,1);
+        HashMap<String, Integer> CountGenresDic;
+
+        if(chose==1) {
+            //Getting TopGenres from movies, Otherwise, the user choose to enter the genre manually.
+            CountGenresDic = CountGenres(UserMovies);
+            TopGenres = MapsortByValuesInteger(CountGenresDic, 1);
+        }
+
         HashMap<String,Integer> MoviesSharedGenres  = GetSharedGenresMovies(TopGenres);
         HashMap<String,Double> SharedWithRank = AddRankToMovies(MoviesSharedGenres);
         HashMap<String,Double> TopRank = MapsortByValuesDouble(SharedWithRank,10);
@@ -141,15 +153,19 @@ public class RecoEngine {
 
     }
 
-    private void InitUserMovies() {
+    private void InitUserMovies(int chose) {
         boolean KeepAsking = true;
 
-        while(KeepAsking)
-        {
-            List<List<String>> OptionalMovies = GetOptionalMovies();
-            this.UpdateUserMovies(OptionalMovies);
-            KeepAsking = CheckIfWantMore();
+        if(chose == 1) {
+            while (KeepAsking) {
+                List<List<String>> OptionalMovies = GetOptionalMovies();
+                this.UpdateUserMovies(OptionalMovies);
+                KeepAsking = CheckIfWantMore();
 
+            }
+        }
+        else{
+            PrintSetWithIndexes(genres);
         }
     }
 
@@ -196,6 +212,19 @@ public class RecoEngine {
     private void PrintListWithIndexes(List<List<String>> optionalMovies) {
         for(int i = 1 ; i <= optionalMovies.size(); i++)
             System.out.println(String.format("%s. %s",i,optionalMovies.get(i-1).get(1)));
+    }
+
+    private void PrintSetWithIndexes(Set<String> genres) {
+        List<String> list = new ArrayList<>(genres);
+
+        for(int i = 1 ; i <= genres.size(); i++)
+            System.out.println(String.format("%s. %s",i,list.get(i-1)));
+
+        int chose = s.nextInt();
+        while(chose<1 || chose>list.size());
+        PrintInfo(String.format("You have choosen %s", list.get(chose-1)));
+        TopGenres = new HashMap<>();
+        TopGenres.put(list.get(chose-1),1);
     }
 
     private List<List<String>> GetOptionalMovies() {
