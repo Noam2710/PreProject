@@ -1,5 +1,7 @@
 package Company;
 
+import javafx.event.ActionEvent;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -16,6 +18,7 @@ public class RecoEngine {
     HashMap<String,List<String>> MoviesPool,Ratings;
     Set<String> genres;
     HashMap<Object, Object> TopGenres;
+    List<List<String>> optinal;
 
 
     public RecoEngine() throws Exception {
@@ -29,7 +32,7 @@ public class RecoEngine {
 
     }
 
-    private void InitPaths() {
+    public void InitPaths() {
         MOVIES_PATH = System.getProperty("user.dir") + "\\Help\\ml-latest-small\\movies.csv";
         RATING_PATH = System.getProperty("user.dir") + "\\Help\\ml-latest-small\\ratings.csv";
     }
@@ -46,7 +49,8 @@ public class RecoEngine {
         re.RecommendMoviesForUser(chose);
     }
 
-        private void RecommendMoviesForUser(int chose) {
+        public List RecommendMoviesForUser(int chose) {
+        List finalMovies = new ArrayList();
             PrintInfo("Searching for Similar movies for the user...");
             HashMap<String, Integer> CountGenresDic;
 
@@ -60,19 +64,23 @@ public class RecoEngine {
             HashMap<String,Double> SharedWithRank = AddRankToMovies(MoviesSharedGenres);
             HashMap<String,Double> TopRank = MapsortByValuesDouble(SharedWithRank,10);
             HashMap<String,Double> IDtoTitle = IDtoTitle(TopRank);
-            PrintHashMapWithIndexes(IDtoTitle);
+            finalMovies = PrintHashMapWithIndexes(IDtoTitle);
+            return finalMovies;
         }
 
-        private void PrintHashMapWithIndexes(HashMap<String, Double> iDtoTitle) {
+        public List PrintHashMapWithIndexes(HashMap<String, Double> iDtoTitle) {
             PrintInfo("We are recommending you the following 10 movies -");
+            List arrayList = new ArrayList();
             for (int i = 1 ; i<= iDtoTitle.entrySet().size() ; i++) {
                 Object movie = iDtoTitle.keySet().toArray()[i-1];
                 System.out.println(String.format("%s. %s",i,movie));
+                arrayList.add(String.format("%s. %s",i,movie));
             }
+            return arrayList;
 
             }
 
-        private HashMap<String,Double> IDtoTitle(HashMap<String, Double> topRank) {
+        public HashMap<String,Double> IDtoTitle(HashMap<String, Double> topRank) {
             HashMap<String,Double> BestMovies = new HashMap<>();
 
             for (Map.Entry<String, Double> IDMovie : topRank.entrySet()) {
@@ -83,7 +91,7 @@ public class RecoEngine {
             return BestMovies;
         }
 
-        private HashMap<String,Double> AddRankToMovies(HashMap<String, Integer> moviesSharedGenres) {
+        public HashMap<String,Double> AddRankToMovies(HashMap<String, Integer> moviesSharedGenres) {
 
             HashMap<String,Double> Ranks = new HashMap<>();
             HashMap<Object,Object> TopmoviesSharedGenres = MapsortByValuesInteger(moviesSharedGenres,50);
@@ -101,7 +109,7 @@ public class RecoEngine {
             return Ranks;
         }
 
-        private HashMap<String,Integer> GetSharedGenresMovies(HashMap<Object, Object> topGenres) {
+        public HashMap<String,Integer> GetSharedGenresMovies(HashMap<Object, Object> topGenres) {
             HashMap<String,Integer> SharedGenresMovies = new HashMap<>();
             List <String>ListOfTopGenre = new ArrayList(topGenres.keySet());
 
@@ -118,7 +126,7 @@ public class RecoEngine {
             return SharedGenresMovies;
         }
 
-        private int GetRank(String[] SpecificMovieGenres, List<String> ListOfTopGenre) {
+        public int GetRank(String[] SpecificMovieGenres, List<String> ListOfTopGenre) {
             int count = 0;
 
             for(String genre : SpecificMovieGenres)
@@ -129,7 +137,7 @@ public class RecoEngine {
 
         }
 
-        private HashMap<String,Integer> CountGenres(List<List<String>> userMovies) {
+        public HashMap<String,Integer> CountGenres(List<List<String>> userMovies) {
 
             HashMap<String,Integer> Count = new HashMap<>();
 
@@ -141,7 +149,7 @@ public class RecoEngine {
             return Count;
         }
 
-        private HashMap<String, Integer> UpdateMap(HashMap<String, Integer> count, String[] genres) {
+        public HashMap<String, Integer> UpdateMap(HashMap<String, Integer> count, String[] genres) {
 
             for(String genre : genres) {
                 try {
@@ -156,15 +164,16 @@ public class RecoEngine {
 
         }
 
-        private void InitUserMovies(int chose) {
+        public void InitUserMovies(int chose) {
             boolean KeepAsking = true;
 
             if(chose == 1) {
                 while (KeepAsking) {
                     List<List<String>> OptionalMovies = GetOptionalMovies();
-                    this.UpdateUserMovies(OptionalMovies);
-                    KeepAsking = CheckIfWantMore();
-
+                    optinal = OptionalMovies;
+                    //this.UpdateUserMovies(OptionalMovies);
+                    KeepAsking = false;
+                    //KeepAsking = CheckIfWantMore();
                 }
             }
             else{
@@ -172,7 +181,7 @@ public class RecoEngine {
             }
         }
 
-        private String EnterMovie() {
+        public String EnterMovie() {
             PrintInfo("Please Enter movie's title");
             String MovieToCheck = s.nextLine();
             while(MovieToCheck.length()==0)
@@ -181,7 +190,7 @@ public class RecoEngine {
             return MovieToCheck;
         }
 
-        private boolean CheckIfWantMore() {
+        public boolean CheckIfWantMore() {
             PrintInfo("Do you want to Continue ?");
             PrintInfo("Enter 1 for yes , 0 otherwise");
             int chose;
@@ -194,55 +203,49 @@ public class RecoEngine {
 
         }
 
-        private void UpdateUserMovies(List<List<String>> optionalMovies) {
-            PrintInfo(String.format("There are %s Movies - ",optionalMovies.size()));
-            PrintListWithIndexes(optionalMovies);
-            PrintInfo("Please enter the movie's index you want");
-            int chose = s.nextInt();
-
-            while(chose<1 || chose>optionalMovies.size()) {
-                PrintInfo("Please enter a valid index");
-                chose = s.nextInt();
-            }
-
-            PrintInfo(String.format("You have choosen the movie - %s ", optionalMovies.get(chose-1).get(1)));
+        public void UpdateUserMovies(List<List<String>> optionalMovies) {
+            //PrintInfo(String.format("There are %s Movies - ",optionalMovies.size()));
+            //PrintListWithIndexes(optionalMovies);
+            //rintInfo("Please enter the movie's index you want");
+            int chose = Integer.parseInt(mainController.movieString2);
+            //PrintInfo(String.format("You have choosen the movie - %s ", optionalMovies.get(chose-1).get(1)));
             this.UserMovies.add(optionalMovies.get(chose-1));
-            PrintInfo("You have entered so far - ");
-            PrintListWithIndexes(UserMovies);
+            //PrintInfo("You have entered so far - ");
+            //PrintListWithIndexes(UserMovies);
 
         }
 
-        private void PrintListWithIndexes(List<List<String>> optionalMovies) {
+        public void PrintListWithIndexes(List<List<String>> optionalMovies) {
             for(int i = 1 ; i <= optionalMovies.size(); i++)
                 System.out.println(String.format("%s. %s",i,optionalMovies.get(i-1).get(1)));
         }
 
-        private void PrintSetWithIndexes(Set<String> genres) {
+        public void PrintSetWithIndexes(Set<String> genres) {
             List<String> list = new ArrayList<>(genres);
-
+            /*
             for(int i = 1 ; i <= genres.size(); i++)
                 System.out.println(String.format("%s. %s",i,list.get(i-1)));
-
-            int chose = s.nextInt();
+            */
+            int chose = Integer.parseInt(mainController.genreString);
             while(chose<1 || chose>list.size());
             PrintInfo(String.format("You have choosen %s", list.get(chose-1)));
             TopGenres = new HashMap<>();
             TopGenres.put(list.get(chose-1),1);
         }
 
-        private List<List<String>> GetOptionalMovies() {
+        public List<List<String>> GetOptionalMovies() {
             List<List<String>> OptinalMovies = new ArrayList<>();
             boolean HasMovies = false;
 
             while(!HasMovies) {
-                String MovieToCheck = EnterMovie();
+                String MovieToCheck = mainController.movieString;
                 for (Map.Entry<String, List<String>> Movie : MoviesPool.entrySet())
                     if (Movie.getValue().get(1).toLowerCase().contains(MovieToCheck.toLowerCase())) {
                         OptinalMovies.add(Movie.getValue());
                         HasMovies = true;
                     }
                 if(!HasMovies)
-                    PrintInfo(String.format("There is no Movies with the title %s ",MovieToCheck ));
+                    return null;
             }
 
             return OptinalMovies;
@@ -253,7 +256,7 @@ public class RecoEngine {
             System.out.println(ANSI_RED + text + ANSI_RESET);
         }
 
-    private static HashMap<String,List<String>> readCSVFile(String PATH,String What) throws IOException {
+    public static HashMap<String,List<String>> readCSVFile(String PATH,String What) throws IOException {
         String line = null;
         BufferedReader stream = null;
         HashMap<String,List<String>> csvData = new HashMap<>();
@@ -290,7 +293,7 @@ public class RecoEngine {
 
     }
 
-    private HashMap<Object,Object> MapsortByValuesInteger(HashMap<String, Integer> map,int HowMany) {
+    public HashMap<Object,Object> MapsortByValuesInteger(HashMap<String, Integer> map,int HowMany) {
         HashMap<Object,Object> TopGenres = new HashMap<>();
         Object[] a = map.entrySet().toArray();
         Arrays.sort(a, new Comparator() {
@@ -308,7 +311,7 @@ public class RecoEngine {
         return TopGenres;
     }
 
-    private HashMap<String,Double> MapsortByValuesDouble(HashMap<String, Double> map,int HowMany) {
+    public HashMap<String,Double> MapsortByValuesDouble(HashMap<String, Double> map,int HowMany) {
         HashMap<String,Double> TopGenres = new HashMap<>();
 
         Object[] a = map.entrySet().toArray();
@@ -327,7 +330,7 @@ public class RecoEngine {
         return TopGenres;
     }
 
-    private Set<String> GetAllGenres() {
+    public Set<String> GetAllGenres() {
         Set<String> genres = new HashSet<>();
         for(Map.Entry<String, List<String>> movie : MoviesPool.entrySet())
             for(String genre : movie.getValue().get(2).split("\\|"))
@@ -338,6 +341,7 @@ public class RecoEngine {
 
 
     }
+
 
 }
 
