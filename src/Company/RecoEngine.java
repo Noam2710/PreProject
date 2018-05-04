@@ -1,11 +1,8 @@
 package Company;
 
-import javafx.event.ActionEvent;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.*;
 
 public class RecoEngine {
@@ -13,6 +10,7 @@ public class RecoEngine {
     public static final String ANSI_RESET = "\u001B[0m";
     public static String MOVIES_PATH;
     public static String RATING_PATH;
+    public static String StringOfUser;
     public static Scanner s = new Scanner(System.in);
     List<List<String>> UserMovies,RecommendMovies,TempForLaterCheck;
     HashMap<String,List<String>> MoviesPool,Ratings;
@@ -45,7 +43,7 @@ public class RecoEngine {
         PrintInfo("2. Enter Genre");
         int chose = s.nextInt();
         RecoEngine re = new RecoEngine();
-        re.InitUserMovies(chose);
+        re.InitUserMovies(chose, "");
         re.RecommendMoviesForUser(chose);
     }
 
@@ -94,17 +92,23 @@ public class RecoEngine {
         public HashMap<String,Double> AddRankToMovies(HashMap<String, Integer> moviesSharedGenres) {
 
             HashMap<String,Double> Ranks = new HashMap<>();
-            HashMap<Object,Object> TopmoviesSharedGenres = MapsortByValuesInteger(moviesSharedGenres,50);
-
+            HashMap<Object,Object> TopmoviesSharedGenres = MapsortByValuesInteger(moviesSharedGenres,200);
+            int count = 0;
             for (Map.Entry<Object, Object> SharedMovie : TopmoviesSharedGenres.entrySet())
-            {
-
-                for(Map.Entry<String, List<String>> movie : Ratings.entrySet())
+              for(Map.Entry<String, List<String>> movie : Ratings.entrySet())
                 {
                         if (movie.getKey().equals(SharedMovie.getKey()))
-                            Ranks.put((String) SharedMovie.getKey(), new Double(movie.getValue().get(0)));
-                }
-            }
+                            Ranks.put((String) SharedMovie.getKey(), Double.parseDouble(movie.getValue().get(0)));
+
+                        if (count<3)
+                            if (MoviesPool.get(movie.getKey()).get(1).contains(StringOfUser))
+                                if (!InList(MoviesPool.get(movie.getKey()).get(1))) {
+                                    Ranks.put((String) movie.getKey(), Double.parseDouble("5"));
+                                    count++;
+                                }
+                 }
+
+
 
             return Ranks;
         }
@@ -126,6 +130,17 @@ public class RecoEngine {
             return SharedGenresMovies;
         }
 
+        public boolean InList(String toCheck)
+        {
+            boolean flag = false;
+
+            for ( int i = 0 ; i<UserMovies.size();i++)
+                if ((toCheck.equals(UserMovies.get(i).get(1))))
+                    flag = true;
+
+            return flag;
+
+        }
         public int GetRank(String[] SpecificMovieGenres, List<String> ListOfTopGenre) {
             int count = 0;
 
@@ -164,8 +179,10 @@ public class RecoEngine {
 
         }
 
-        public void InitUserMovies(int chose) {
+        public void InitUserMovies(int chose, String movieString) {
             boolean KeepAsking = true;
+            StringOfUser = movieString;
+
 
             if(chose == 1) {
                 while (KeepAsking) {

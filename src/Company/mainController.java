@@ -14,8 +14,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-import org.rapidpm.modul.javafx.textfield.autocomplete.AutoCompleteTextField;
-
 import java.net.URL;
 import java.util.*;
 
@@ -86,7 +84,7 @@ public class mainController extends Application implements Initializable {
         movieText2.setVisible(true);
         moviesList.getItems().clear();
         movieString = movieText.getText();
-        recoEngine.InitUserMovies(1);
+        recoEngine.InitUserMovies(1,movieString);
         moviesList.getItems().clear();
 
         List<List<String>> list = new ArrayList<List<String>>(recoEngine.optinal);
@@ -105,7 +103,7 @@ public class mainController extends Application implements Initializable {
         else
         {
             genreString = genreText.getText();
-            recoEngine.InitUserMovies(2);
+            recoEngine.InitUserMovies(2, movieString);
             finalMovies = recoEngine.RecommendMoviesForUser(2);
             moviesList.getItems().clear();
             moviesList.getItems().addAll(finalMovies);
