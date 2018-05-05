@@ -45,6 +45,7 @@ public class mainController extends Application implements Initializable {
     }
 
 
+
     public void start(Stage primaryStage) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
@@ -80,16 +81,25 @@ public class mainController extends Application implements Initializable {
     }
 
     public void addMovie(ActionEvent actionEvent) {
-        addMovieButton2.setVisible(true);
-        movieText2.setVisible(true);
-        moviesList.getItems().clear();
         movieString = movieText.getText();
         recoEngine.InitUserMovies(1,movieString);
-        moviesList.getItems().clear();
 
-        List<List<String>> list = new ArrayList<List<String>>(recoEngine.optinal);
-        for(int i = 1 ; i <= recoEngine.optinal.size(); i++)
-            moviesList.getItems().add(i +". "+list.get(i-1).get(1));
+        if (recoEngine.optinal != null) {
+            addMovieButton2.setVisible(true);
+            movieText2.setVisible(true);
+            moviesList.getItems().clear();
+            List<List<String>> list = new ArrayList<List<String>>(recoEngine.optinal);
+            //recoEngine.UpdateUserMovies(recoEngine.optinal);
+            for (int i = 1; i <= recoEngine.optinal.size(); i++)
+                moviesList.getItems().add(i + ". " + list.get(i - 1).get(1));
+        }
+        else
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Alert!");
+            alert.setHeaderText("לא נמצאו תוצאות לסרט שחיפשת / חיפשת סרט שלא קיים");
+            alert.showAndWait();
+        }
     }
 
     public void chooseGenre(ActionEvent actionEvent) {
@@ -97,7 +107,7 @@ public class mainController extends Application implements Initializable {
         if (genreText.getText().length() < 1 || !isNumeric(genreText.getText())) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Alert!");
-            alert.setHeaderText("לא בחרת מספר ז'אנר");
+            alert.setHeaderText("לא בחרת מספר ז'אנר / בחרת ערך לא תקין");
             alert.showAndWait();
         }
         else
@@ -111,7 +121,7 @@ public class mainController extends Application implements Initializable {
         }
     }
 
-    public  boolean isNumeric(String str)
+    public static boolean isNumeric(String str)
     {
         return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
     }
@@ -124,13 +134,32 @@ public class mainController extends Application implements Initializable {
 
         List finalMovies = new ArrayList();
         movieString2 = movieText2.getText();
-        movieText2.setVisible(false);
-        addMovieButton2.setVisible(false);
-        recoEngine.UpdateUserMovies(recoEngine.optinal);
 
-        finalMovies = recoEngine.RecommendMoviesForUser(1);
-        moviesList.getItems().clear();
-        moviesList.getItems().addAll(finalMovies);
+        if (isNumeric(movieString2))
+        {
+            if (Integer.parseInt(mainController.movieString2)<=recoEngine.optinal.size()) {
+                movieText2.setVisible(false);
+                addMovieButton2.setVisible(false);
+                recoEngine.UpdateUserMovies(recoEngine.optinal);
+                finalMovies = recoEngine.RecommendMoviesForUser(1);
+                moviesList.getItems().clear();
+                moviesList.getItems().addAll(finalMovies);
+            }
+            else
+            {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Alert!");
+                alert.setHeaderText("בחרת מספר הגדול ממספר האופציות לבחירה");
+                alert.showAndWait();
+            }
+        }
+        else
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Alert!");
+            alert.setHeaderText(" הזנת ערך לא תקין");
+            alert.showAndWait();
+        }
 
     }
 }

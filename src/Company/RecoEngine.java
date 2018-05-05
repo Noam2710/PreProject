@@ -1,5 +1,7 @@
 package Company;
 
+import javafx.scene.control.Alert;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -224,13 +226,23 @@ public class RecoEngine {
             //PrintInfo(String.format("There are %s Movies - ",optionalMovies.size()));
             //PrintListWithIndexes(optionalMovies);
             //rintInfo("Please enter the movie's index you want");
-            int chose = Integer.parseInt(mainController.movieString2);
-            //PrintInfo(String.format("You have choosen the movie - %s ", optionalMovies.get(chose-1).get(1)));
-            this.UserMovies.add(optionalMovies.get(chose-1));
+            String check = mainController.movieString2;
+
+                int chose = Integer.parseInt(mainController.movieString2);
+                //PrintInfo(String.format("You have choosen the movie - %s ", optionalMovies.get(chose-1).get(1)));
+                if (chose > optinal.size()) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Alert!");
+                    alert.setHeaderText("בחרת מספר שלא מופיע / הזנת ערך לא תקין");
+                    alert.showAndWait();
+                } else
+                    this.UserMovies.add(optionalMovies.get(chose - 1));
+            }
+
             //PrintInfo("You have entered so far - ");
             //PrintListWithIndexes(UserMovies);
 
-        }
+
 
         public void PrintListWithIndexes(List<List<String>> optionalMovies) {
             for(int i = 1 ; i <= optionalMovies.size(); i++)
