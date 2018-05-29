@@ -4,10 +4,10 @@
     <list default="true" id="d3387f30-492b-49fb-8f35-b12fe5181e39" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$1.class" afterPath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$2.class" afterPath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine.class" afterPath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/mainController.class" afterPath="$PROJECT_DIR$/out/production/PreProject/Company/mainController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/RecoEngine.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/PreProject/Company/mainController.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/Company/RecoEngine.java" afterPath="$PROJECT_DIR$/src/Company/RecoEngine.java" />
       <change beforePath="$PROJECT_DIR$/src/Company/mainController.java" afterPath="$PROJECT_DIR$/src/Company/mainController.java" />
     </list>
@@ -30,72 +30,66 @@
       <file leaf-file-name="RecoEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="222" column="9" lean-forward="true" selection-start-line="222" selection-start-column="9" selection-end-line="222" selection-end-column="9" />
               <folding>
+                <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-                <element signature="e#9095#9137#0" expanded="false" />
+                <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+                <element signature="e#8246#8321#0" expanded="false" />
                 <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+                <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
                 <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-                <element signature="e#11337#11345#0" expanded="true" />
                 <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-                <element signature="class#12773:13016" expanded="false" />
-                <element signature="method#compare#0;class#12773:13016" expanded="false" />
+                <element signature="class#12667:12910" expanded="false" />
+                <element signature="method#compare#0;class#12667:12910" expanded="false" />
                 <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-                <element signature="class#13502:13743" expanded="false" />
-                <element signature="method#compare#0;class#13502:13743" expanded="false" />
+                <element signature="class#13396:13637" expanded="false" />
+                <element signature="method#compare#0;class#13396:13637" expanded="false" />
                 <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Company/mainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="143" column="27" lean-forward="false" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+            <state relative-caret-position="386">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#start#0;class#mainController#0" expanded="false" />
                 <element signature="method#initialize#0;class#mainController#0" expanded="false" />
                 <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
-                <element signature="e#2692#2706#0" expanded="true" />
-                <element signature="e#4116#4117#0" expanded="true" />
-                <element signature="e#4144#4145#0" expanded="true" />
+                <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+                <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+                <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+                <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXMLLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Company/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="1777" column="9" lean-forward="true" selection-start-line="1777" selection-start-column="9" selection-end-line="1777" selection-end-column="9" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListView.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/scene/control/ListView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-              <folding>
-                <element signature="e#17822#17823#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -106,8 +100,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="XSLT Stylesheet" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,8 +134,9 @@
         <option value="$PROJECT_DIR$/src/Company/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI/Main.fxml" />
         <option value="$PROJECT_DIR$/src/Company/Main.fxml" />
-        <option value="$PROJECT_DIR$/src/Company/RecoEngine.java" />
         <option value="$PROJECT_DIR$/src/Company/mainController.java" />
+        <option value="$PROJECT_DIR$/src/Company/RecoEngine.java" />
+        <option value="$PROJECT_DIR$/src/Company/Tests.java" />
       </list>
     </option>
   </component>
@@ -172,7 +167,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -188,8 +185,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,8 +209,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,6 +317,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -329,19 +327,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47244096" sideWeight="0.50390625" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1511811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42072213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1732224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40816328" sideWeight="0.49609375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -349,6 +346,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -367,13 +365,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Company/RecoEngine.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Company/RecoEngine.java</url>
-          <line>192</line>
+          <line>194</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
@@ -388,27 +386,125 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
+            <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
+            <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
+            <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
+            <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company/mainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#mainController#0" expanded="false" />
+            <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+            <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+            <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
+            <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
+            <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -419,27 +515,34 @@
         <state relative-caret-position="34">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -450,13 +553,12 @@
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#mainController#0" expanded="false" />
             <element signature="method#initialize#0;class#mainController#0" expanded="false" />
             <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
-            <element signature="e#2692#2706#0" expanded="true" />
-            <element signature="e#4116#4117#0" expanded="true" />
-            <element signature="e#4144#4145#0" expanded="true" />
+            <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+            <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+            <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,27 +568,34 @@
         <state relative-caret-position="187">
           <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -497,13 +606,12 @@
         <state relative-caret-position="85">
           <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#mainController#0" expanded="false" />
             <element signature="method#initialize#0;class#mainController#0" expanded="false" />
             <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
-            <element signature="e#2692#2706#0" expanded="true" />
-            <element signature="e#4116#4117#0" expanded="true" />
-            <element signature="e#4144#4145#0" expanded="true" />
+            <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+            <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+            <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,27 +621,34 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -548,27 +663,34 @@
         <state relative-caret-position="482">
           <caret line="343" column="0" lean-forward="true" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -579,27 +701,34 @@
         <state relative-caret-position="782">
           <caret line="46" column="5" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -610,26 +739,25 @@
         <state relative-caret-position="629">
           <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#mainController#0" expanded="false" />
             <element signature="method#initialize#0;class#mainController#0" expanded="false" />
             <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
-            <element signature="e#2692#2706#0" expanded="true" />
-            <element signature="e#4116#4117#0" expanded="true" />
-            <element signature="e#4144#4145#0" expanded="true" />
+            <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+            <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+            <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Company/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="78" lean-forward="false" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
@@ -637,27 +765,34 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
             <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
             <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
             <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
             <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
             <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
@@ -686,81 +821,88 @@
     <entry file="jar://$PROJECT_DIR$/src/Company/javafx-autocomplete-textfield-1.2.jar!/org/rapidpm/modul/javafx/textfield/autocomplete/AutoCompleteTextField.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/net/URLClassLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/Company/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Integer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/scene/control/ListView.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/scene/control/ListView.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="222" column="9" lean-forward="true" selection-start-line="222" selection-start-column="9" selection-end-line="222" selection-end-column="9" />
           <folding>
-            <element signature="e#17822#17823#0" expanded="true" />
+            <element signature="method#RecoEngine#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#RecommendMoviesForUser#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#AddRankToMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InList#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#InitUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#UpdateUserMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#8246#8321#0" expanded="false" />
+            <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintSetWithIndexes#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#GetOptionalMovies#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
+            <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#12667:12910" expanded="false" />
+            <element signature="method#compare#0;class#12667:12910" expanded="false" />
+            <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
+            <element signature="class#13396:13637" expanded="false" />
+            <element signature="method#compare#0;class#13396:13637" expanded="false" />
+            <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="1777" column="9" lean-forward="true" selection-start-line="1777" selection-start-column="9" selection-end-line="1777" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Company/RecoEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="343">
+          <caret line="2046" column="0" lean-forward="false" selection-start-line="2046" selection-start-column="0" selection-end-line="2046" selection-end-column="0" />
           <folding>
-            <element signature="method#InitPaths#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#main#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#PrintHashMapWithIndexes#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#IDtoTitle#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#GetSharedGenresMovies#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#GetRank#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#CountGenres#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#UpdateMap#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#EnterMovie#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#CheckIfWantMore#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#9095#9137#0" expanded="false" />
-            <element signature="method#PrintListWithIndexes#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#PrintInfo#0;class#RecoEngine#0" expanded="false" />
-            <element signature="method#readCSVFile#0;class#RecoEngine#0" expanded="false" />
-            <element signature="e#11337#11345#0" expanded="true" />
-            <element signature="method#MapsortByValuesInteger#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#12773:13016" expanded="false" />
-            <element signature="method#compare#0;class#12773:13016" expanded="false" />
-            <element signature="method#MapsortByValuesDouble#0;class#RecoEngine#0" expanded="false" />
-            <element signature="class#13502:13743" expanded="false" />
-            <element signature="method#compare#0;class#13502:13743" expanded="false" />
-            <element signature="method#GetAllGenres#0;class#RecoEngine#0" expanded="false" />
+            <element signature="e#81800#81801#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Company/mainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="143" column="27" lean-forward="false" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+        <state relative-caret-position="386">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#mainController#0" expanded="false" />
             <element signature="method#initialize#0;class#mainController#0" expanded="false" />
             <element signature="method#initGenres#0;class#mainController#0" expanded="false" />
-            <element signature="e#2692#2706#0" expanded="true" />
-            <element signature="e#4116#4117#0" expanded="true" />
-            <element signature="e#4144#4145#0" expanded="true" />
+            <element signature="method#addMovie#0;class#mainController#0" expanded="false" />
+            <element signature="method#chooseGenre#0;class#mainController#0" expanded="false" />
+            <element signature="method#isNumeric#0;class#mainController#0" expanded="false" />
+            <element signature="method#addMovie2#0;class#mainController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Company/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

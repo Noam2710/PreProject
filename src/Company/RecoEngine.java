@@ -239,11 +239,6 @@ public class RecoEngine {
                     this.UserMovies.add(optionalMovies.get(chose - 1));
             }
 
-            //PrintInfo("You have entered so far - ");
-            //PrintListWithIndexes(UserMovies);
-
-
-
         public void PrintListWithIndexes(List<List<String>> optionalMovies) {
             for(int i = 1 ; i <= optionalMovies.size(); i++)
                 System.out.println(String.format("%s. %s",i,optionalMovies.get(i-1).get(1)));

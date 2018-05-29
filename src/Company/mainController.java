@@ -44,8 +44,6 @@ public class mainController extends Application implements Initializable {
 
     }
 
-
-
     public void start(Stage primaryStage) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
